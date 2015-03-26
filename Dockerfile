@@ -12,4 +12,4 @@ RUN cd /opt/ && curl -O https://download.elasticsearch.org/kibana/kibana/kibana-
 RUN ln -s /opt/kibana-4.0.1-linux-x64 /opt/kibana
 
 EXPOSE 5601
-ENTRYPOINT ["bash", "/opt/entrypoint.sh"]
+ENTRYPOINT ["/opt/entrypoint.sh"]
