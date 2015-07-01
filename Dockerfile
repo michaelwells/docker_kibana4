@@ -9,7 +9,7 @@ USER kibana
 
 COPY entrypoint.sh /opt/entrypoint.sh
 
-ENV version=4.1.0
+ENV version=4.1.1
 RUN cd /opt/ && curl -O https://download.elasticsearch.org/kibana/kibana/kibana-${version}-linux-x64.tar.gz && tar xvf kibana-${version}-linux-x64.tar.gz && rm /opt/kibana-${version}-linux-x64.tar.gz
 RUN ln -s /opt/kibana-${version}-linux-x64 /opt/kibana
 
