@@ -1,7 +1,4 @@
 # Kibana4
-A docker image to run [Kibana 4](https://www.elastic.co/products/kibana). No more, no less. Takes a single variable that points towards your elasticsearch host (ES_URL)
 
-# Example Usage
-```
-docker run -d -p 5601:5601 -e ES_URL='http://your.url.here:9200/' mikew/kibana4
-```
+## **Deprecated**
+This image is now deprecated. It is recommended to switch to the [official Kibana image](https://registry.hub.docker.com/_/kibana/) instead ([repo here](https://github.com/docker-library/kibana)). The variable name has changed from ES_URL to ELASTICSEARCH_URL but otherwise you can continue using it in much the same way.
